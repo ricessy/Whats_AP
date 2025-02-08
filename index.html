@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whats AP?</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="box">
+                
+        <div class="top">
+            <div class="search">
+                <form>
+                    <button type="button" id="searchbutton"><img src="image/search.svg" style="scale: 95%;"></button>
+                    <input type="text" id="searchbox">
+                </form>        
+            </div>
+
+            <div class="contenttablecont">
+                <button type="button" id="tableofcontentbutton">Contents</button>
+                <div id="dropdown" class="dropdown-content">
+                    <a href="#section1">Section 1</a>
+                    <a href="#section2">Section 2</a>
+                    <a href="#section3">Section 3</a>
+                    <a href="#section4">Section 4</a>
+                    <a href="#section5">Section 5</a>
+                    <a href="#section6">Section 6</a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="bannercont">
+            <div class="banner">
+                <h1>What's AP!</h1>
+                <p style="width: 200px;">Explore the history and impact of World War I through this immersive audiobook, bringing pivotal moments and stories to life.</p>
+            </div>
+            <img src="image\soldier-in-uniform.png" style="scale: 50%; margin-left: 3rem; margin-top: 5rem">
+        </div>
+    </div>
+
+    <div class="navbar" style="margin-bottom: 5px; position: fixed;">
+        <div class="navcont" style="display: flex;">
+           <button onclick="topFunction()" id="myBtn"><img src="image\up.svg" style="scale: 30%; transform: rotate(90deg); margin-top: -1.5rem;"></button>
+           <button id="homebtn"><a href="index.html"><img src="image\home.svg" style="scale: 70%; margin-top: -.8rem;"></a></button>
+           <button id="backBtn"><img src="image\up.svg" style="scale: 30%; margin-top: -1.5rem;"></button>
+        </div>
+   </div>
+
+        <div class="content">
+            <div class="section1" id="section1">
+                <p id="sectionp">Section 1</p>
+                <div class="carousel">
+                    <h1>Mga Salik sa Pagsiklab ng Unang Digmaang Pandaigdig</h1>
+                    <div class="carousel__item carousel__item--visible">
+                        <img src="Website Image_\Aira Part\Pagsiklab ng Unang Digmaan.jpg" id="contentimg1" style="width: 15rem; height: 20rem;">
+                        <h3>Nasyonalismo</h3>
+                        <p>Ms. Aira</p>
+                    </div>
+                    <div class="carousel__item">
+                        <img src="Website Image_\Aira Part\Imperyalismo at Kolonyalismo_.jpg" id="contentimg2" style="width: 15rem; height: 20rem;">
+                        <h3 style="line-height: 15px; margin-top: 5px;">Imperyalismo at <br> Kolonyalismo</h3>
+                        <p>Ms. Aira</p>
+                    </div>
+                    <div class="carousel__item">
+                        <img src="Website Image_\Aira Part\Militarismo.jpg" id="contentimg3" style="width: 15rem; height: 20rem;">
+                        <h3>Militarismo</h3>
+                        <p>Ms. Aira</p>
+                    </div>
+                    <div class="carousel__item">
+                        <img src="Website Image_\Aira Part\Pagbuo ng Alyansa.jpg" id="contentimg4" style="width: 15rem; height: 20rem;">
+                        <h3>Pagbuo ng mga Alyansa</h3>
+                        <p>Ms. Aira</p>
+                    </div>
+            
+                    <div class="carousel__actions" style="margin-top: -5rem;">
+                        <button id="carousel__button--prev1"><img src="image/up.svg" style="scale: 70%;"></button>
+                        <button id="carousel__button--next1"><img src="image/up.svg" style="scale: 70%; transform: rotate(180deg);"></button>
+                    </div>
+                </div>
+            </div>
+            
+        
+               <div class="gallery" id="section2">
+                <p id="gallery-title">Section 2</p>
+                <div class="image-carousel">
+                    <h1>Ang Pagsisimula ng Unang Digmaang Pandaigdig</h1>
+                    <div class="image-carousel__item image-carousel__item--visible">
+                        <img src="Website Image_\Lei Part\Kanlurang Europa.jpg" id="image2" style="width: 15rem; height: 20rem;">
+                        <h3>Kanlurang Europa</h3>
+                        <p>Ms. Lei Ann</p>
+                    </div>
+                    <div class="image-carousel__item">
+                        <img src="Website Image_\Lei Part\Silangang Europe.jpg" id="image3" style="width: 15rem; height: 20rem;">
+                        <h3>Silangang Europa</h3>
+                        <p>Ms. Lei Ann</p>
+                    </div>
+                    <div class="image-carousel__item">
+                        <img src="Website Image_\Lei Part\Balkan.jpg" id="image4" style="width: 15rem; height: 20rem;">
+                        <h3>Balkan</h3>
+                        <p>Ms. Lei Ann</p>
+                    </div>
+                    <div class="image-carousel__item">
+                        <img src="Website Image_\Lei Part\Karagatan.jpg" id="image5" style="width: 15rem; height: 20rem;">
+                        <h3>Karagatan</h3>
+                        <p>Ms. Lei Ann</p>
+                    </div>
+                    <div class="image-carousel__controls" style="margin-top: -5rem;">
+                        <button id="carousel-prev"><img src="image/up.svg" style="scale: 130%;"></button>
+                        <button id="carousel-next"><img src="image/up.svg" style="scale: 130%; transform: rotate(180deg);"></button>
+                    </div>
+                </div>
+            </div>
+         
+        
+            <div class="display-section" id="section3">
+                <p id="display-title">Section 3</p>
+                <div class="slider">
+                    <h1>Timeline</h1>
+                    <div class="slider__item slider__item--visible">
+                        <img src="Website Image_\Mark Part\1908.jpg" id="image-display1" style="width: 15rem; height: 20rem;">
+                        <h3>1908</h3>
+                        <p>Mr. Mark</p>
+                    </div>
+                    <div class="slider__item">
+                        <img src="Website Image_\Mark Part\1914.jpg" id="image-display2" style="width: 15rem; height: 20rem;">
+                        <h3>1914</h3>
+                        <p>Mr. Mark</p>
+                    </div>
+                    <div class="slider__item">
+                        <img src="Website Image_\Mark Part\1916.jpg" id="image-display3" style="width: 15rem; height: 20rem;">
+                        <h3>1915</h3>
+                        <p>Mr. Mark</p>
+                    </div>
+                    <div class="slider__item">
+                        <img src="Website Image_\Mark Part\1916.jpg" id="image-display4" style="width: 15rem; height: 20rem;">
+                        <h3>1916</h3>
+                        <p>Mr. Mark</p>
+                    </div>
+                    <div class="slider__item">
+                        <img src="Website Image_\Mark Part\Mga Pangyayari pagkatapos ng Digmaan.jpg" id="image-display5" style="width: 15rem; height: 20rem;">
+                        <h3>1917</h3>
+                        <p>Mr. Mark</p>
+                    </div>
+                    <div class="slider__item">
+                        <img src="Website Image_\Mark Part\1919.jpg" id="image-display6" style="width: 15rem; height: 20rem;">
+                        <h3>1919</h3>
+                        <p>Mr. Mark</p>
+                    </div>
+            
+                    <div class="slider__controls" style="margin-top: -5rem;">
+                        <button id="slider-prev"><img src="image/up.svg" style="scale: 130%;"></button>
+                        <button id="slider-next"><img src="image/up.svg" style="scale: 130%; transform: rotate(180deg);"></button>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="photo-gallery" id="section4">
+                <p id="gallery-title">Section 4</p>
+                <div class="image-slider">
+                    <h1>Pagpasok ng USA sa Digmaan</h1>
+                    <div class="image-slider__item image-slider__item--visible">
+                        <img src="Website Image_\Mark Part\Zimmermann Code.jpg" id="art-image1" style="width: 15rem; height: 20rem;">
+                        <h3>Zimmermann Code</h3>
+                        <p>Mr. Mark</p>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="media-showcase" id="section5">
+                <p id="media-showcase-title">Section 5</p>
+                <div class="media-slider">
+                    <h1>Mga Pangyayari Pagkatapos ng Unang Digmaang Pandaigdig</h1>
+                    <div class="media-slider__item media-slider__item--visible">
+                        <img src="Website Image_\Mark Part\Mga Pangyayari pagkatapos ng Digmaan.jpg" id="media-image1" style="width: 15rem; height: 20rem;">
+                        <h3>Treaty of Versailles</h3>
+                        <p>Mr. Mark</p>
+                    </div>
+                </div>
+            </div>
+    
+                <div class="personalities-carousel">
+                    <p class="personalities-title">Section 6</p>
+                    <div class="personalities-slider">
+                        <h1>Famous Personalities</h1>
+                        <div class="personalities-slide personalities-slide--visible">
+                            <img src="Website Image_\Personalities During WW1\Arcduke Franz.jpg" class="personalities-img" style="width: 15rem; height: 20rem;">
+                            <h3>Archduke Franz</h3>
+                            <p>Archduke</p>
+                        </div>
+                        <div class="personalities-slide">
+                            <img src="Website Image_\Personalities During WW1\David George_.jpg" class="personalities-img" style="width: 15rem; height: 20rem;">
+                            <h3>David George</h3>
+                            <p>Prime Minister</p>
+                        </div>
+                        <div class="personalities-slide">
+                            <img src="Website Image_\Personalities During WW1\Gavrilo Princip.jpg" class="personalities-img" style="width: 15rem; height: 20rem;">
+                            <h3>Gavrilo Princip</h3>
+                            <p>Member of Secret Organization</p>
+                        </div>
+                        <div class="personalities-slide">
+                            <img src="Website Image_\Personalities During WW1\George Clemenceau_.jpg" class="personalities-img" style="width: 15rem; height: 20rem;">
+                            <h3>George Clemenceau</h3>
+                            <p>The Tiger</p>
+                        </div>
+                        <div class="personalities-slide">
+                            <img src="Website Image_\Personalities During WW1\Vittorio Orlando.jpg" class="personalities-img" style="width: 15rem; height: 20rem;">
+                            <h3>Vittorio Orlando</h3>
+                            <p>Premier of Victory</p>
+                        </div>
+                        <div class="personalities-slide">
+                            <img src="Website Image_\Personalities During WW1\Vittorio Orlando.jpg" class="personalities-img" style="width: 15rem; height: 20rem;">
+                            <h3>Woodraw Wilson</h3>
+                            <p>Architect</p>
+                        </div>
+                        <div class="personalities-controls" style="margin-top: -5rem;">
+                            <button class="personalities-btn-prev"><img src="image/up.svg" style="scale: 130%;"></button>
+                            <button class="personalities-btn-next"><img src="image/up.svg" style="scale: 130%; transform: rotate(180deg);"></button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    
+
+    <div class="footer">
+        <table>
+            <tr id="footertbheader">
+                <th>About</th>
+                <th>Contact Us</th>
+                <th>©2025</th>
+            </tr>
+
+            <tr>
+                <td id="about">A website made by aspiring student teachers for their students to learn significant historical stories</td>
+                <td>
+                    <div class="contactus">
+                    <a href=https://www.facebook.com/jazriel.pradiez.1"><img src="image\facebook.svg" style="scale: 30%;"></a>
+                    <a href="mailto:jazrielpradiez3@gmail.com"><img src="image\email.svg" style="scale: 30%;"></a>
+                    <a href="tel:09516473974"><img src="image\telephone.svg" style="scale: 30%;"></a>
+                    </div>
+                </td>
+                <td id="names">
+                    Gacon, A. H., <br>
+                    Lopez, L. A., <br>
+                    Mabalatan, H. A., <br>
+                    Patani, A. M., <br>
+                    Pradiez, J., <br>
+                    Sanchez, M. <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+  <script src="index.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".personalities-carousel").forEach(carousel => {
+        let slidePosition = 0;
+        const slides = carousel.querySelectorAll('.personalities-slide');
+        const totalSlides = slides.length;
+
+        const nextButton = carousel.querySelector('.personalities-btn-next');
+        const prevButton = carousel.querySelector('.personalities-btn-prev');
+
+        nextButton.addEventListener('click', function () {
+            moveToNextSlide();
+        });
+
+        prevButton.addEventListener('click', function () {
+            moveToPrevSlide();
+        });
+
+        function updateSlidePosition() {
+            slides.forEach(slide => {
+                slide.classList.remove('personalities-slide--visible');
+                slide.classList.add('personalities-slide--hidden');
+            });
+
+            slides[slidePosition].classList.add('personalities-slide--visible');
+        }
+
+        function moveToNextSlide() {
+            slidePosition = (slidePosition + 1) % totalSlides;
+            updateSlidePosition();
+        }
+
+        function moveToPrevSlide() {
+            slidePosition = (slidePosition - 1 + totalSlides) % totalSlides;
+            updateSlidePosition();
+        }
+
+        updateSlidePosition(); // Set initial slide
+    });
+});
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,772 @@
+
+@media only screen and (max-width: 600px) {
+    /* CSS rules for phones */
+ 
+    body {
+        margin: auto; /* Center the body content */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        font-family: "Poppins", serif;
+        background-color: #FFF8F3;
+    }
+
+    p {
+      transition: background-color 0.4s ease, color 0.4s ease;
+      display: inline-block;
+      border-radius: 5px;
+      width: 420px;
+  }
+  
+  p:hover {
+      background-color: #d1c3b74b; /* Highlight color */
+      color: #6E5B4F; /* Text color */
+      font-weight: 700;
+  }
+  
+    .top {
+        display: grid;
+        grid-template-columns: auto 1fr; /* Two columns: one for the icon, the other for the input */
+        align-items: center; 
+        margin: 0 1rem;
+    }
+    
+    /**************************SEARCH BAR***************************/
+    /* Styling the search container */
+    .search {
+        display: grid; /* Use grid layout */
+        grid-template-columns: auto 1fr; /* Two columns: one for the icon, the other for the input */
+        align-items: center; /* Vertically center the content */
+        background-color: #D1C3B7; /* Light beige background */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        width: 325px; /* Optional: Set a max width */
+        gap: 0.5rem; /* Space between icon and input field */  
+        margin-top: 30px;
+        margin-left: 5px;
+        height: 2rem;
+    }
+    
+    /* Styling the search icon */
+    .search img {
+        margin-top: 5px;
+        height: 20px; /* Adjust size as needed */
+        margin-right: 0.5rem; /* Space between icon and input */
+    }
+    
+    #searchbutton {
+        border: none; /* Remove the default border */
+        background-color: transparent; 
+    }
+    
+    /* Styling the search input field */
+    .search input {
+        
+        border: none; /* Remove the default border */
+        background-color: transparent; /* Match the container's background */
+        outline: none; /* Remove the blue focus ring */
+        font-size: 1rem; /* Adjust font size */
+        width: 150px; /* Make the input field expand fully */
+        height: 20px;
+        font-family: 'Poppins', sans-serif; /* Match the font */
+        color: #3e2c27; /* Dark text color */
+        margin-top: -15rem;
+    }
+    
+    .highlight {
+        background-color: yellow;  
+    }
+    
+    /**************************CONTENT MENU***************************/
+    
+    .contenttablecont{
+        margin-top: 30px;
+        margin-left: 5px;
+        padding: 5px;
+    }
+    
+    #tableofcontentbutton {
+        border: none; /* Remove the default border */
+        background-color: #D9D9D9; /* Light beige background */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        width: 90px;
+        height: 2rem;
+        font-family: "Poppins", serif;
+        font-weight: 500;
+    }
+    
+    
+    /* Styling the dropdown menu */
+    .dropdown-content {
+        display: none; /* Hidden by default */
+        position: absolute; /* Position relative to the parent container */
+        background-color: #f9f9f9; /* Dropdown background */
+        min-width: 160px; /* Minimum width of the dropdown */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        z-index: 1; /* Ensure it appears above other elements */
+        border-radius: 5px; /* Rounded corners */
+    }
+    
+    /* Styling each dropdown link */
+    .dropdown-content a {
+        color: #333; /* Text color */
+        padding: 8px 16px; /* Space around the links */
+        text-decoration: none; /* Remove underline */
+        display: block; /* Make the links block elements */
+    }
+    
+    /* Change color on hover */
+    .dropdown-content a:hover {
+        background-color: #ddd; /* Light grey on hover */
+    }
+    
+    /* Show dropdown when active */
+    .show {
+        display: block;
+    }
+    
+    
+    /**************************BANNER***************************/
+      
+    .bannercont {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        margin-top: 1rem;
+        margin-left: 1.2rem;
+        margin-right: 1rem;
+        margin-bottom: 5rem;
+        padding: 10px;
+        height: 10rem;
+        width: 25.5rem;
+        background-color: #F1F1F1; /* Light beige background */
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        gap: -50px; /* Reduces the gap between text and image */
+      }
+      
+      .banner h1 {
+        position: absolute;
+        font-family: 'Old English Text MT', serif; /* Gothic font for the heading */
+        font-size: 42px;
+        color: #000;
+        margin-top: -4rem;
+        margin-left: 2rem;
+      }
+
+    .banner p {
+        position: absolute;
+        font-family: 'Poppins', sans-serif; /* Match the font */
+        font-size: 10px;
+        margin-top: 1px;
+        margin-right: 8rem;
+        color: #333;
+        margin-left: 2rem;
+        text-indent: 50px;
+        line-height: 10px;
+        text-align: justify;
+      }
+      .banner img {
+        position: relative;
+     }
+       
+    
+     /**************************FOOTER***************************/
+    
+     .footer {
+        position: relative;
+        border-top-left-radius: 30px;
+        margin-left: -.5rem;
+        bottom: -8.5rem;
+        width: 30.5rem;
+        height: 9rem;
+        background-color: #D1C3B7;
+        color: white;
+        text-align: center;
+    }   
+      
+    .footer img {
+        height: 100px;
+        width: 100px;
+        margin: -25px;
+    }
+
+    .contactus {
+        display: flex;
+        margin: 0 3rem;
+        color: #4b4a4a;
+    }
+
+    #about{
+        font-size: 12px;
+        margin: 0rem;
+        text-align: left;
+        line-height: 15px;
+        color: #000;
+        padding: 10px;
+    }
+
+    #names{
+        font-size: 11px;
+        margin: 0 2rem;
+        text-align:  right;
+        line-height: 15px;
+        color: #000;
+    }
+
+    #footertbheader{
+        color: #000;
+        font-size: 12px;
+        margin-bottom: -10px;
+    }
+
+   /**************************NAV BAR***************************/ 
+
+   .navbar{
+    position: fixed;
+    padding: 1rem;
+    margin-top: 28rem;
+    margin-left: 7rem;
+    align-items: center;
+    background-color: #EDE2DA;
+    border-radius: 10px;
+    z-index: 1000; /* Ensures it's above other elements */
+}
+
+    .navcont{
+    height: 2rem;
+    width: 14rem;
+   }
+
+   #myBtn, #homebtn, #backBtn {
+    border: none;
+    background-color: transparent;
+   }
+
+   /**************************Content***************************/ 
+
+   .content{
+    width: 470px; 
+    margin: 2px; 
+    padding: 2px;
+   }
+
+   .content h1 {
+    font-family: 'Old English Text MT', serif; 
+    margin:2rem;
+    font-size: large;
+   }
+
+   #sectionp{
+    margin-bottom: -2rem;
+    margin-left: 15px;
+   }
+
+   .carousel{
+    overflow: hidden;
+    position: relative;
+
+    transform: scale(0.95); /* Optional: Add a zoom effect */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+
+    margin-bottom: 2rem;
+   }
+
+   .carousel .carousel__item, .carousel__item--hidden {
+    display: none;
+   }
+
+   .carousel .carousel__item {
+
+    height: auto;
+   }
+
+   .carousel .carousel__item--visible {
+    display: block;
+   }
+
+   .carousel .carousel__actions {
+    width: 100%; /* Expand the container to the full width of the page */
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+   }
+
+   .carousel .carousel__actions button {
+    border: none;
+    background-color: transparent;
+   }
+
+    #carousel__button--prev {
+        scale: 50%;
+        margin-right: 20px;
+        position: absolute;
+        right: 0;
+    }
+
+    #carousel__button--next {
+        scale: 50%;
+        margin-right: 20px;
+        position: absolute;
+        right: 0;
+    }
+
+   #contentimg1,  #contentimg2,  #contentimg3,  #contentimg4,  #contentimg5,  #contentimg6 {
+   margin-left: 7.5rem;
+   margin-top: 1rem;
+   border-radius: 2rem;
+   }
+
+   .carousel h3 {
+    font-size: 20px;
+    text-align: left;
+    margin-top: -.5rem;
+    margin-left: 8rem;
+   }
+
+   .carousel p {
+    text-align: left;
+    margin-top: -1.5rem;
+    margin-left: 8rem;
+   }
+}
+
+ /**************************Gallery 2***************************/ 
+
+   .gallery{
+    width: 470px; 
+    margin: 2px; 
+    padding: 2px;
+   }
+
+   .gallery h1 {
+    font-family: 'Old English Text MT', serif; 
+    margin:2rem;
+    font-size: large;
+   }
+
+   #gallery-title{
+    margin-bottom: -2rem;
+    margin-left: 15px;
+   }
+
+   .image-carousel{
+    overflow: hidden;
+    position: relative;
+
+    transform: scale(0.95); /* Optional: Add a zoom effect */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+
+    margin-bottom: 2rem;
+   }
+
+   .image-carousel .image-carousel__item, .image-carousel__item--hidden {
+    display: none;
+   }
+
+   .image-carousel .image-carousel__item {
+    height: auto;
+   }
+
+   .image-carousel .image-carousel__item--visible {
+    display: block;
+   }
+
+   .image-carousel .image-carousel__controls {
+    width: 100%; /* Expand the container to the full width of the page */
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+   }
+
+   .image-carousel .image-carousel__controls button {
+    border: none;
+    background-color: transparent;
+   }
+
+    #carousel-prev {
+    scale: 50%;
+    margin-left: 20px;
+    position: absolute;
+    left: 0;
+    }
+
+    #carousel-next {
+        scale: 50%;
+        margin-right: 20px;
+        position: absolute;
+        right: 0;
+    }
+
+   #image2, #image3, #image4, #image5, #image6 {
+   margin-left: 7.5rem;
+   margin-top: 1rem;
+   border-radius: 2rem;
+   }
+
+   .image-carousel h3 {
+    font-size: 20px;
+    text-align: left;
+    margin-top: -.5rem;
+    margin-left: 8rem;
+   }
+
+   .image-carousel p {
+    text-align: left;
+    margin-top: -1.5rem;
+    margin-left: 8rem;
+   }
+
+
+
+   /**************************Display Section 1***************************/ 
+
+   .display-section{
+    width: 470px; 
+    margin: 2px; 
+    padding: 2px;
+   }
+   .display-section h1 {
+    font-family: 'Old English Text MT', serif; 
+    margin:2rem;
+    font-size: large;
+   }
+
+   #display-title{
+    margin-bottom: -2rem;
+    margin-left: 15px;
+   }
+
+   .slider{
+    overflow: hidden;
+    position: relative;
+
+    transform: scale(0.95);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+
+    margin-bottom: 2rem;
+   }
+
+   .slider .slider__item, .slider__item--hidden {
+    display: none;
+   }
+
+   .slider .slider__item {
+    height: auto;
+   }
+
+   .slider .slider__item--visible {
+    display: block;
+   }
+
+   .slider .slider__controls {
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+   }
+
+   .slider .slider__controls button {
+    border: none;
+    background-color: transparent;
+   }
+
+   #slider-prev {
+    scale: 50%;
+    margin-left: 20px;
+    position: absolute;
+    left: 0;
+   }
+
+   #slider-next {
+    scale: 50%;
+    margin-right: 20px;
+    position: absolute;
+    right: 0;
+   }
+
+   #image-display1, #image-display2, #image-display3, #image-display4, #image-display5, #image-display6 {
+    margin-left: 7.5rem;
+    margin-top: 1rem;
+    border-radius: 2rem;
+   }
+
+   .slider h3 {
+    font-size: 20px;
+    text-align: left;
+    margin-top: -.5rem;
+    margin-left: 8rem;
+   }
+
+   .slider p {
+    text-align: left;
+    margin-top: -1.5rem;
+    margin-left: 8rem;
+   }
+
+
+
+
+/**************************Photo Gallery***************************/ 
+
+.photo-gallery{
+    width: 470px; 
+    margin: 2px; 
+    padding: 2px;
+   }
+   .photo-gallery h1 {
+    font-family: 'Old English Text MT', serif; 
+    margin:2rem;
+    font-size: large;
+   }
+
+   #gallery-title{
+    margin-bottom: -2rem;
+    margin-left: 15px;
+   }
+
+   .image-slider{
+    overflow: hidden;
+    position: relative;
+
+    transform: scale(0.95);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+
+    margin-bottom: 2rem;
+   }
+
+   .image-slider .image-slider__item, .image-slider__item--hidden {
+    display: none;
+   }
+
+   .image-slider .image-slider__item {
+    height: auto;
+   }
+
+   .image-slider .image-slider__item--visible {
+    display: block;
+   }
+
+   .image-slider .image-slider__controls {
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+   }
+
+   .image-slider .image-slider__controls button {
+    border: none;
+    background-color: transparent;
+   }
+
+   #image-slider-prev {
+    scale: 50%;
+    margin-left: 20px;
+    position: absolute;
+    left: 0;
+   }
+
+   #image-slider-next {
+    scale: 50%;
+    margin-right: 20px;
+    position: absolute;
+    right: 0;
+   }
+
+   #art-image1, #art-image2, #art-image3, #art-image4, #art-image5, #art-image6  {
+    margin-left: 7.5rem;
+    margin-top: 1rem;
+    border-radius: 2rem;
+   }
+
+   .image-slider h3 {
+    font-size: 20px;
+    text-align: left;
+    margin-top: -.5rem;
+    margin-left: 8rem;
+   }
+
+   .image-slider p {
+    text-align: left;
+    margin-top: -1.5rem;
+    margin-left: 8rem;
+   }
+
+/**************************Media Showcase***************************/ 
+
+.media-showcase{
+    width: 470px; 
+    margin: 2px; 
+    padding: 2px;
+   }
+   .media-showcase h1 {
+    font-family: 'Old English Text MT', serif; 
+    margin:2rem;
+   }
+
+   #media-showcase-title{
+    margin-bottom: -2rem;
+    margin-left: 15px;
+   }
+
+   .media-slider{
+    overflow: hidden;
+    position: relative;
+
+    transform: scale(0.95);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+
+    margin-bottom: 2rem;
+   }
+
+   .media-slider .media-slider__item, .media-slider__item--hidden {
+    display: none;
+   }
+
+   .media-slider .media-slider__item {
+    height: auto;
+   }
+
+   .media-slider .media-slider__item--visible {
+    display: block;
+   }
+
+   .media-slider .media-slider__controls {
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+   }
+
+   .media-slider .media-slider__controls button {
+    border: none;
+    background-color: transparent;
+   }
+
+   #media-slider-prev {
+    scale: 50%;
+    margin-left: 20px;
+    position: absolute;
+    left: 0;
+   }
+
+   #media-slider-next {
+    scale: 50%;
+    margin-right: 20px;
+    position: absolute;
+    right: 0;
+   }
+
+   #media-image1 {
+    margin-left: 7.5rem;
+    margin-top: 1rem;
+    border-radius: 2rem;
+   }
+
+   .media-slider h3 {
+    font-size: 20px;
+    text-align: left;
+    margin-top: -.5rem;
+    margin-left: 8rem;
+   }
+
+   .media-slider p {
+    text-align: left;
+    margin-top: -1.5rem;
+    margin-left: 8rem;
+   }
+
+
+
+
+  /************************** Personalities Section ***************************/ 
+
+.personalities-carousel {
+  width: 470px; 
+  margin: 2px; 
+  padding: 2px;
+}
+
+.personalities-title {
+  margin-bottom: -2rem;
+  margin-left: 15px;
+}
+
+.personalities-slider {
+  overflow: hidden;
+  position: relative;
+  transform: scale(0.95);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  margin-bottom: 2rem;
+}
+
+.personalities-slider .personalities-slide,
+.personalities-slide--hidden {
+  display: none;
+}
+
+.personalities-slider .personalities-slide {
+  height: auto;
+}
+
+.personalities-slider .personalities-slide--visible {
+  display: block;
+}
+
+.personalities-controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 75%;
+  transform: translateY(-50%);
+}
+
+.personalities-controls button {
+  border: none;
+  background-color: transparent;
+}
+
+.personalities-btn-prev {
+  scale: 50%;
+  margin-left: 20px;
+  position: absolute;
+  left: 0;
+}
+
+.personalities-btn-next {
+  scale: 50%;
+  margin-right: 20px;
+  position: absolute;
+  right: 0;
+}
+
+.personalities-img {
+  margin-left: 7.5rem;
+  margin-top: 1rem;
+  border-radius: 2rem;
+}
+
+.personalities-slider h3 {
+  font-size: 20px;
+  text-align: left;
+  margin-top: -.5rem;
+  margin-left: 8rem;
+}
+
+.personalities-slider p {
+  text-align: left;
+  margin-top: -1.5rem;
+  margin-left: 8rem;
+}
+
+
