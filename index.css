@@ -237,10 +237,17 @@
     width: 14rem;
    }
 
-   #myBtn, #homebtn, #backBtn {
+   #myBtn, #homebtn, #downBtn {
     border: none;
     background-color: transparent;
    }
+
+   #downBtn img{
+    padding-top: 5px;
+    transform: rotate(-90deg);
+    max-width: 100%;
+      box-sizing: border-box; 
+  }
 
    /**************************Content***************************/ 
 
@@ -770,3 +777,9 @@
 }
 
 
+/*  ==== AL JON'S EDIT  ======*/
+
+.content a{
+  text-decoration: none;
+  color: inherit;
+}
