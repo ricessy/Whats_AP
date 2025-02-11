@@ -7,6 +7,7 @@
     <title>Whats AP?</title>
 
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="content.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -26,7 +27,7 @@
             <div class="contenttablecont">
                 <button type="button" id="tableofcontentbutton">Contents</button>
                 <div id="dropdown" class="dropdown-content">
-                    <a href="content.html">Section 1</a>
+                    <a href="#section1">Section 1</a>
                     <a href="#section2">Section 2</a>
                     <a href="#section3">Section 3</a>
                     <a href="#section4">Section 4</a>
@@ -48,35 +49,35 @@
 
     <div class="navbar" style="margin-bottom: 5px; position: fixed;">
         <div class="navcont" style="display: flex;">
-           <button onclick="topFunction()" id="myBtn"><img src="image\up.svg" style="scale: 30%; transform: rotate(90deg); margin-top: -1.5rem;"></button>
+           <button onclick="scrollToPreviousSection()" id="myBtn"><img src="image\up.svg" style="scale: 30%; transform: rotate(90deg); margin-top: -1.5rem;"></button>
            <button id="homebtn"><a href="index.html"><img src="image\home.svg" style="scale: 70%; margin-top: -.8rem;"></a></button>
-           <button id="backBtn"><img src="image\up.svg" style="scale: 30%; margin-top: -1.5rem;"></button>
+           <button id="downBtn"><img src="image\up.svg" style="scale: 30%; margin-top: -1.5rem;"></button>
         </div>
    </div>
 
         <div class="content">
             <div class="section1" id="section1">
-                <a href="content.html" style="text-decoration: none; color: inherit; font: inherit;">Section 1</a>
+                <a href="content.html"> <p id="sectionp" >Section 1</p></a> 
                 <div class="carousel">
-                    <h1>Mga Salik sa Pagsiklab ng Unang Digmaang Pandaigdig</h1>
-                    <div class="carousel__item carousel__item--visible">
+                   <a href="content.html#salik"> <h1>Mga Salik sa Pagsiklab ng Unang Digmaang Pandaigdig</h1> </a>
+              <a href="content.html#nasyonalismo"> <div class="carousel__item carousel__item--visible">
                         <img src="Website Image_\Aira Part\Pagsiklab ng Unang Digmaan.jpg" id="contentimg1" style="width: 15rem; height: 20rem;">
-                        <h3>Nasyonalismo</h3>
+                        <h3>Nasyonalismo</h3> </a> 
                         <p>Ms. Aira</p>
                     </div>
-                    <div class="carousel__item">
+              <a href="content.html#imperyalismo">   <div class="carousel__item">
                         <img src="Website Image_\Aira Part\Imperyalismo at Kolonyalismo_.jpg" id="contentimg2" style="width: 15rem; height: 20rem;">
-                        <h3 style="line-height: 15px; margin-top: 5px;">Imperyalismo at <br> Kolonyalismo</h3>
+                        <h3 style="line-height: 15px; margin-top: 5px;">Imperyalismo at <br> Kolonyalismo</h3></a>
                         <p>Ms. Aira</p>
                     </div>
-                    <div class="carousel__item">
+              <a href="content.html#militarismo"> <div class="carousel__item">
                         <img src="Website Image_\Aira Part\Militarismo.jpg" id="contentimg3" style="width: 15rem; height: 20rem;">
-                        <h3>Militarismo</h3>
+                        <h3>Militarismo</h3> </a>
                         <p>Ms. Aira</p>
                     </div>
-                    <div class="carousel__item">
+              <a href="content.html#alyansa"><div class="carousel__item">
                         <img src="Website Image_\Aira Part\Pagbuo ng Alyansa.jpg" id="contentimg4" style="width: 15rem; height: 20rem;">
-                        <h3>Pagbuo ng mga Alyansa</h3>
+                        <h3>Pagbuo ng mga Alyansa</h3> </a>
                         <p>Ms. Aira</p>
                     </div>
             
@@ -89,27 +90,27 @@
             
         
                <div class="gallery" id="section2">
-                <p id="gallery-title">Section 2</p>
+                <a href="content.html#pagsisimula"><p id="gallery-title">Section 2</p></a> 
                 <div class="image-carousel">
-                    <h1>Ang Pagsisimula ng Unang Digmaang Pandaigdig</h1>
+                    <a href="content.html#labanan"> <h1>Mga Labanan sa Unang Digmaang</h1> </a>
                     <div class="image-carousel__item image-carousel__item--visible">
-                        <img src="Website Image_\Lei Part\Kanlurang Europa.jpg" id="image2" style="width: 15rem; height: 20rem;">
-                        <h3>Kanlurang Europa</h3>
+                       <a href="content.html#kanluran"> <img src="Website Image_\Lei Part\Kanlurang Europa.jpg" id="image2" style="width: 15rem; height: 20rem;">
+                        <h3>Kanlurang Europa</h3></a>
                         <p>Ms. Lei Ann</p>
                     </div>
                     <div class="image-carousel__item">
-                        <img src="Website Image_\Lei Part\Silangang Europe.jpg" id="image3" style="width: 15rem; height: 20rem;">
-                        <h3>Silangang Europa</h3>
+                      <a href="content.html#silangan">  <img src="Website Image_\Lei Part\Silangang Europe.jpg" id="image3" style="width: 15rem; height: 20rem;">
+                        <h3>Silangang Europa</h3> </a>
                         <p>Ms. Lei Ann</p>
                     </div>
                     <div class="image-carousel__item">
-                        <img src="Website Image_\Lei Part\Balkan.jpg" id="image4" style="width: 15rem; height: 20rem;">
-                        <h3>Balkan</h3>
+                        <a href="content.html#balkan">  <img src="Website Image_\Lei Part\Balkan.jpg" id="image4" style="width: 15rem; height: 20rem;">
+                        <h3>Balkan</h3> </a>
                         <p>Ms. Lei Ann</p>
                     </div>
                     <div class="image-carousel__item">
-                        <img src="Website Image_\Lei Part\Karagatan.jpg" id="image5" style="width: 15rem; height: 20rem;">
-                        <h3>Karagatan</h3>
+                        <a href="content.html#karagatan">   <img src="Website Image_\Lei Part\Karagatan.jpg" id="image5" style="width: 15rem; height: 20rem;">
+                        <h3>Karagatan</h3> </a>
                         <p>Ms. Lei Ann</p>
                     </div>
                     <div class="image-carousel__controls" style="margin-top: -5rem;">
@@ -121,37 +122,37 @@
          
         
             <div class="display-section" id="section3">
-                <p id="display-title">Section 3</p>
+              <a href="content.html#timeline">  <p id="display-title">Section 3</p> </a>
                 <div class="slider">
-                    <h1>Timeline</h1>
+                   <a href="content.html#timeline"> <h1>Timeline</h1> </a>
                     <div class="slider__item slider__item--visible">
-                        <img src="Website Image_\Mark Part\1908.jpg" id="image-display1" style="width: 15rem; height: 20rem;">
-                        <h3>1908</h3>
+                       <a href="content.html#1908"> <img src="Website Image_\Mark Part\1908.jpg" id="image-display1" style="width: 15rem; height: 20rem;">
+                        <h3>1908</h3> </a>
                         <p>Mr. Mark</p>
                     </div>
                     <div class="slider__item">
-                        <img src="Website Image_\Mark Part\1914.jpg" id="image-display2" style="width: 15rem; height: 20rem;">
+                       <a href="content.html#1914"> <img src="Website Image_\Mark Part\1914.jpg" id="image-display2" style="width: 15rem; height: 20rem;">
                         <h3>1914</h3>
                         <p>Mr. Mark</p>
                     </div>
                     <div class="slider__item">
-                        <img src="Website Image_/Mark Part/1915.jpg" id="image-display3" style="width: 15rem; height: 20rem;">
-                        <h3>1915</h3>
+                        <a href="content.html#1915"><img src="Website Image_/Mark Part/1915.jpg" id="image-display3" style="width: 15rem; height: 20rem;">
+                        <h3>1915</h3> </a>
                         <p>Mr. Mark</p>
                     </div>
                     <div class="slider__item">
-                        <img src="Website Image_\Mark Part\1916.jpg" id="image-display4" style="width: 15rem; height: 20rem;">
-                        <h3>1916</h3>
+                        <a href="content.html#1916"> <img src="Website Image_\Mark Part\1916.jpg" id="image-display4" style="width: 15rem; height: 20rem;">
+                        <h3>1916</h3>  </a>
                         <p>Mr. Mark</p>
                     </div>
                     <div class="slider__item">
-                        <img src="images/1917.jpeg" id="image-display5" style="width: 15rem; height: 20rem;">
-                        <h3>1917</h3>
+                        <a href="content.html#1917">   <img src="images/1917.jpeg" id="image-display5" style="width: 15rem; height: 20rem;">
+                        <h3>1917</h3> </a>
                         <p>Mr. Mark</p>
                     </div>
                     <div class="slider__item">
-                        <img src="Website Image_\Mark Part\1919.jpg" id="image-display6" style="width: 15rem; height: 20rem;">
-                        <h3>1919</h3>
+                        <a href="content.html#1919">  <img src="Website Image_\Mark Part\1919.jpg" id="image-display6" style="width: 15rem; height: 20rem;">
+                        <h3>1919</h3>  </a>
                         <p>Mr. Mark</p>
                     </div>
             
@@ -164,12 +165,12 @@
         
             
             <div class="photo-gallery" id="section4">
-                <p id="gallery-title">Section 4</p>
+                <a href="content.html#us">  <p id="gallery-title">Section 4</p> </a>
                 <div class="image-slider">
-                    <h1>Pagpasok ng USA sa Digmaan</h1>
+                   <a href="content.html#us"> <h1>Pagpasok ng USA sa Digmaan</h1> </a>
                     <div class="image-slider__item image-slider__item--visible">
-                        <img src="Website Image_\Mark Part\Zimmermann Code.jpg" id="art-image1" style="width: 15rem; height: 20rem;">
-                        <h3>Zimmermann Code</h3>
+                       <a href="content.html#code"> <img src="Website Image_\Mark Part\Zimmermann Code.jpg" id="art-image1" style="width: 15rem; height: 20rem;">
+                        <h3>Zimmermann Code</h3> </a>
                         <p>Mr. Mark</p>
                     </div>
                 </div>
@@ -177,51 +178,58 @@
         
             
             <div class="media-showcase" id="section5">
-                <p id="media-showcase-title">Section 5</p>
+                <a href="content.html#treaty">  <p id="media-showcase-title">Section 5</p> </a>
                 <div class="media-slider">
-                    <h1>Mga Pangyayari Pagkatapos ng Unang Digmaang Pandaigdig</h1>
+                   <a href="content.html#treaty"> <h1>Mga Pangyayari Pagkatapos ng Unang Digmaang Pandaigdig</h1> </a>
                     <div class="media-slider__item media-slider__item--visible">
-                        <img src="Website Image_\Mark Part\Mga Pangyayari pagkatapos ng Digmaan.jpg" id="media-image1" style="width: 15rem; height: 20rem;">
-                        <h3>Treaty of Versailles</h3>
+                        <a href="content.html#treaty"> <img src="Website Image_\Mark Part\Mga Pangyayari pagkatapos ng Digmaan.jpg" id="media-image1" style="width: 15rem; height: 20rem;">
+                        <h3>Treaty of Versailles</h3>  </a>
                         <p>Mr. Mark</p>
                     </div>
                 </div>
             </div>
     
-                <div class="personalities-carousel">
-                    <p class="personalities-title">Section 6</p>
+                <div class="personalities-carousel" id="section6">
+                  <a href="content.html#personalities">  <p class="personalities-title">Section 6</p> </a>
                     <div class="personalities-slider">
-                        <h1>Famous Personalities</h1>
-                        <div class="personalities-slide personalities-slide--visible">
-                            <img src="Website Image_\Personalities During WW1\Arcduke Franz.jpg" class="personalities-img" style="width: 15rem; height: 20rem;">
-                            <h3>Archduke Franz</h3>
+                        <a href="content.html#personalities">    <h1>Famous Personalities</h1>
+                       
+                            <div class="personalities-slide personalities-slide--visible">
+                                <a href="content.html#princip">  <img src="Website Image_\Personalities During WW1\Gavrilo Princip.jpg" class="personalities-img" style="width: 15rem; height: 20rem;">
+                                <h3>Gavrilo Princip</h3> </a>
+                                <p>Member of Secret Organization</p>
+                            </div>
+                       
+                            <div class="personalities-slide">
+                            <a href="content.html#franz">    <img src="Website Image_\Personalities During WW1\Arcduke Franz.jpg" class="personalities-img" style="width: 15rem; height: 20rem;">
+                            <h3>Archduke Franz</h3> </a>
                             <p>Archduke</p>
                         </div>
+
                         <div class="personalities-slide">
-                            <img src="Website Image_\Personalities During WW1\David George_.jpg" class="personalities-img" style="width: 15rem; height: 20rem;">
-                            <h3>David George</h3>
-                            <p>Prime Minister</p>
-                        </div>
-                        <div class="personalities-slide">
-                            <img src="Website Image_\Personalities During WW1\Gavrilo Princip.jpg" class="personalities-img" style="width: 15rem; height: 20rem;">
-                            <h3>Gavrilo Princip</h3>
-                            <p>Member of Secret Organization</p>
-                        </div>
-                        <div class="personalities-slide">
-                            <img src="Website Image_\Personalities During WW1\George Clemenceau_.jpg" class="personalities-img" style="width: 15rem; height: 20rem;">
-                            <h3>George Clemenceau</h3>
-                            <p>The Tiger</p>
-                        </div>
-                        <div class="personalities-slide">
-                            <img src="Website Image_\Personalities During WW1\Vittorio Orlando.jpg" class="personalities-img" style="width: 15rem; height: 20rem;">
-                            <h3>Vittorio Orlando</h3>
-                            <p>Premier of Victory</p>
-                        </div>
-                        <div class="personalities-slide">
-                            <img src="images/woodrow.jpg" class="personalities-img" style="width: 15rem; height: 20rem;">
-                            <h3>Woodrow Wilson</h3>
+                            <a href="content.html#woodrow">  <img src="images/woodrow.jpg" class="personalities-img" style="width: 15rem; height: 20rem;">
+                            <h3>Woodrow Wilson</h3> </a>
                             <p>Architect</p>
                         </div>
+
+                        <div class="personalities-slide">
+                            <a href="content.html#david"> <img src="Website Image_\Personalities During WW1\David George_.jpg" class="personalities-img" style="width: 15rem; height: 20rem;">
+                            <h3>David Lloyd George</h3> </a>
+                            <p>Prime Minister</p>
+                        </div>
+
+                        <div class="personalities-slide">
+                            <a href="content.html#georges">   <img src="Website Image_\Personalities During WW1\George Clemenceau_.jpg" class="personalities-img" style="width: 15rem; height: 20rem;">
+                            <h3>Georges Clemenceau</h3> </a>
+                            <p>The Tiger</p>
+                        </div>
+
+                        <div class="personalities-slide">
+                            <a href="content.html#orlando"> <img src="Website Image_\Personalities During WW1\Vittorio Orlando.jpg" class="personalities-img" style="width: 15rem; height: 20rem;">
+                            <h3>Vittorio Orlando</h3> </a>
+                            <p>Premier of Victory</p>
+                        </div>
+
                         <div class="personalities-controls" style="margin-top: -5rem;">
                             <button class="personalities-btn-prev"><img src="image/up.svg" style="scale: 130%;"></button>
                             <button class="personalities-btn-next"><img src="image/up.svg" style="scale: 130%; transform: rotate(180deg);"></button>
