@@ -120,14 +120,57 @@ document.getElementById("searchbox").addEventListener("input", function () {
     }
     }
 
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    // When the user clicks on the button, scroll to another section 1 at a time to TOP
+    function scrollToPreviousSection() {
+        const sections = document.querySelectorAll("#section1, #section2, #section3, #section4, #section5, #section6");
+        let currentSection = null;
+    
+        // Find the currently visible section
+        sections.forEach((section) => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= window.innerHeight / 2 && rect.bottom > window.innerHeight / 2) {
+                currentSection = section;
+            }
+        });
+    
+        if (currentSection) {
+            const sectionArray = Array.from(sections);
+            let currentIndex = sectionArray.indexOf(currentSection);
+    
+            if (currentIndex > 0) {
+                sectionArray[currentIndex - 1].scrollIntoView({ behavior: "smooth" });
+            }
+        }
     }
+    
+    
+// When the user clicks on the button, scroll to another section 1 at a time to BOTTOM
 
-
-
+    function scrollToNextSection() {
+        const sections = document.querySelectorAll("#section1, #section2, #section3, #section4, #section5, #section6");
+        let currentSection = null;
+    
+        // Find the currently visible section
+        sections.forEach((section) => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= window.innerHeight / 2 && rect.bottom > window.innerHeight / 2) {
+                currentSection = section;
+            }
+        });
+    
+        if (currentSection) {
+            const sectionArray = Array.from(sections);
+            let currentIndex = sectionArray.indexOf(currentSection);
+    
+            if (currentIndex < sectionArray.length - 1) {
+                sectionArray[currentIndex + 1].scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    }
+    
+    // Attach event listener to the button
+    document.getElementById("downBtn").addEventListener("click", scrollToNextSection);
+    
 
 
 
