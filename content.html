@@ -16,7 +16,7 @@
 
     <nav class="navbar">
         <button class="nav-btn button-up" id="button-up" href="###"><img src="icons\back.svg" style="margin-left: -2px; scale:75%"></button>
-        <button class="nav-btn button-home" href="###"><img src="icons\home.svg"></button>
+        <a href="index.html"><button class="nav-btn button-home"><img src="icons\home.svg"></button> </a>
         
       </nav>
 
@@ -24,7 +24,7 @@
 <!--================== INTRODUCTION =============-->
     <br>
     <div>
-        <p class="intro"><b>Mga Salik sa Pagsiklab ng Unang Digmaang Pandaigdig</b></p>
+        <p id="salik" class="intro"><b>Mga Salik sa Pagsiklab ng Unang Digmaang Pandaigdig</b></p>
     </div>
 
     <div class="intro-text">
@@ -43,11 +43,11 @@
 <!--========================== SALIK 1=========-->
     <div class="container1">
         <div class="c1-item1">
-            <img src="images\Nansyonalismo.jpeg">
+            <img id="nasyonalismo" src="images\Nansyonalismo.jpeg">
         </div>
 
         <div class="c1-item2" style="margin-left: -3px;">
-            <p class="topic_title"><b>Nationalismo</b></p>
+            <p class="topic_title" id="topic_title"><b>Nasyonalismo</b></p>
         </div>
 
         <div class="c1-item3">
@@ -72,7 +72,7 @@
 
 <div class="container1">
     <div class="c1-item1">
-        <img src="images\Imperyalismo at Kolonyalismo.jpeg">
+        <img id="imperyalismo" src="images\Imperyalismo at Kolonyalismo.jpeg">
     </div>
 
     <div class="c1-item2" style="margin-left: -3px;">
@@ -101,7 +101,7 @@
 
 <div class="container1">
     <div class="c1-item1">
-        <img src="images\Militarismo.jpeg">
+        <img id="militarismo" src="images\Militarismo.jpeg">
     </div>
 
     <div class="c1-item2" style="margin-left: -3px;">
@@ -130,7 +130,7 @@
 
 <div class="container1">
     <div class="c1-item1">
-        <img src="images\Pagbuo ng Alyansa.jpeg" id="flipImage">
+        <img id="alyansa" src="images\Pagbuo ng Alyansa.jpeg" id="flipImage">
     </div>
 
     <div class="c1-item2" style="margin-left: -3px;">
@@ -156,7 +156,7 @@
 <!--======             2nd TOPIC          ==========-->
 <div class="container2">
 <br>
-    <div class="c1-item1">
+    <div id="pagsisimula" class="c1-item1">
         <img src="images\Ang Pagsimula ng Unang Digmaan .jpeg">
     </div>
 
@@ -185,7 +185,7 @@
 <!--    ===============     table title     ===================-->
 
     <div class="c1-item1 table-title">
-        <img src="images\Pagsiklab ng Unang Digmaan.jpeg">
+        <img id="labanan" src="images\Pagsiklab ng Unang Digmaan.jpeg">
     </div>
 <br>    
 
@@ -206,7 +206,7 @@
               <th>Mahahalagang Pangyayari</th>
             </tr>
             <tr>
-           <td>Alfreds Futterkiste</td>           <!-- 1st row --> 
+           <td id="kanluran">Kanlurang Europa</td>           <!-- 1st row --> 
               <td><ul>
                 <li>Germany</li>
                 <br>
@@ -226,7 +226,7 @@
             </tr>
 
             <tr>
-              <td>Silangang Europa</td>       <!-- 2nd row -->
+              <td id="silangan">Silangang Europa</td>       <!-- 2nd row -->
               <td><ul>
                 <li>Russia</li> 
                 <br>
@@ -253,7 +253,7 @@
                   </ul></td>
             </tr>
             <tr>
-              <td>Balkan</td>               <!-- 3rd row -->
+              <td id="balkan">Balkan</td>               <!-- 3rd row -->
               <td><ul>
                 <li>Austria</li> 
                 <br>
@@ -282,7 +282,7 @@
                   </ul></td>
             </tr>
             <tr>
-              <td>Karagatan</td>            <!-- 4th row -->
+              <td id="karagatan">Karagatan</td>            <!-- 4th row -->
               <td><ul>
                 <li>Germany </li> 
                 <br>
@@ -308,7 +308,7 @@
 
 <!--        =====  2nd TABLE    ===========-->
           <div>
-            <p class="topic_title" style="text-align: start;"><b>Tingnan ang Timeline sa Ibaba Upang Higit na Maunawaan ang mga Pangyayari sa Unang Digmaang Pandaigdig</b></p>
+            <p id="timeline" class="topic_title" style="text-align: start;"><b>Tingnan ang Timeline sa Ibaba Upang Higit na Maunawaan ang mga Pangyayari sa Unang Digmaang Pandaigdig</b></p>
         </div>
 <br>
         <div class="c1-item4">
@@ -323,14 +323,14 @@
                 </tr>
 
                 <tr>
-                    <td>1908</td>
+                    <td id="1908">1908</td>
                     <td><ul>
                         <li>Sinakop ng Austria ang Bosnia-Herzegovina at mga lalawigan sa Balkan noong sakupin ng Austria ang Bosnia-Herzegovina, mga lalawigan sa Balkan.</li>
                     </ul></td>
                 </tr>
 
                 <tr>
-                    <td>1914</td>
+                    <td id="1914">1914</td>
                     <td><ul>
                         <li>Pinaslang si Archduke Francis Ferdinand at ang kanyang asawa.</li>
                         <br>
@@ -351,28 +351,28 @@
                 </tr>
 
                 <tr>
-                    <td>1915</td>
+                    <td id="1915">1915</td>
                     <td><ul>
                         <li>Sumali sa Central Powers ang Bulgaria Pinalubog ang barkong Lusitania ng Amerika. </li>
                     </ul></td>
                 </tr>
 
                 <tr>
-                    <td>1916</td>
+                    <td id="1916">1916</td>
                     <td><ul>
                         <li>Napasailalim sa Central Powers ang karamihan sa mga estado ng Balkan.                        </li>
                     </ul></td>
                 </tr>
 
                 <tr>
-                    <td>1917</td>
+                    <td id="1917">1917</td>
                     <td><ul>
                         <li>Nagkaroon ng rebolusyon sa Russia Nagdeklara ang United States ng digmaan laban sa Germany.                        </li>
                     </ul></td>
                 </tr>
 
                 <tr>
-                    <td>1919</td>
+                    <td id="1919">1919</td>
                     <td><ul>
                         <li>Paglagda sa Kasunduan sa Versailles at Pagwakas ng Unang Digmaang Pandaigdig.                        </li>
                     </ul></td>
@@ -384,6 +384,12 @@
 
     <!-- ================      4th TOPIC      ===============-->
     <br> <br>
+
+    <div class="c1-item1 table-title">
+        <img id="us" src="images\Pagpasok ng USA sa Digmaan.jpeg">
+    </div>
+<br> 
+
     <div class="container3">
         <p class="intro" style="text-align: center;"><b>Pagpasok ng United States sa Digmaan</b></p>
     
@@ -407,6 +413,12 @@
     <!-- ================      5th TOPIC      ===============-->
 
     <br>
+
+    <div class="c1-item1 table-title">
+        <img id="code" src="images\Zimmermann Code.jpeg">
+    </div>
+<br> 
+
     <div class="container4">
         <p class="intro"><b>Ang Zimmermann Code</b></p>
     
@@ -431,8 +443,13 @@
     </div>
 
     <!-- ================      6th TOPIC      ===============-->
-
     <br>
+
+    <div class="c1-item1 table-title">
+        <img id="treaty" src="images\Mga Pangyayari pagkatapos ng Digmaan.jpg">
+    </div>
+<br> 
+    
     <div class="container5">
         <p class="intro"><b>Mga Pangyayari Pagkatapos ng Unang Digmaang Pandaigdig: Mga Kasunduang Pangkapayapaan - Treaty of Versailes </b></p>
     
@@ -458,12 +475,12 @@
 
   <!-- ================      7th TOPIC      ===============-->
 
-  <br> <br>
+  <br id="personalities" > <br>
   <div class="container6">
       <p class="intro"><b>Mga Kilalang Tao Noong Unang Digmaang Pandaigdig </b></p>
 <br><br><br>
       <div class="c1-item1">
-        <img src="images\Gavrilo Princip.jpeg">
+        <img id="princip" src="images\Gavrilo Princip.jpeg">
       </div>
 <br>
     <div class="c1-item2" style="margin-left: -3px;">
@@ -500,7 +517,7 @@
 
 <br><br>
       <div class="c1-item1">
-        <img src="images\Arcduke Franz.jpeg">
+        <img id="franz" src="images\Arcduke Franz.jpeg">
       </div>
 <br>
     <div class="c1-item2" style="margin-left: -3px;">
@@ -534,7 +551,7 @@
 
 <br><br>
       <div class="c1-item1">
-        <img src="images\woodrow.jpg">
+        <img id="woodrow" src="images\woodrow.jpg">
       </div>
 <br>
     <div class="c1-item2" style="margin-left: -3px;">
@@ -563,7 +580,7 @@
 
 <br><br>
       <div class="c1-item1">
-        <img src="images\David George .jpg">
+        <img id="david" src="images\David George .jpg">
       </div>
 <br>
     <div class="c1-item2" style="margin-left: -3px;">
@@ -592,7 +609,7 @@
 
 <br><br>
       <div class="c1-item1">
-        <img src="images\George Clemenceau .jpg">
+        <img id="georges" src="images\George Clemenceau .jpg">
       </div>
 <br>
     <div class="c1-item2" style="margin-left: -3px;">
@@ -621,7 +638,7 @@
 
 <br><br>
       <div class="c1-item1">
-        <img src="images\Vittorio Orlando.jpeg">
+        <img id="orlando" src="images\Vittorio Orlando.jpeg">
       </div>
 <br>
     <div class="c1-item2" style="margin-left: -3px;">
